@@ -63,6 +63,10 @@ systemctl --user enable --now 9router novnc-gate omb-relay-bridge ombnew
 
 Detail tiap layanan, pemecahan masalah, dan peta domain: lihat `docs/`.
 
+## Instalasi di server lain
+
+Prompt hand-off lengkap untuk Hermes Agent di server tujuan (instalasi OMB + 9Router + tunnel, langkah demi langkah): [`docs/INSTALL-PROMPT.md`](docs/INSTALL-PROMPT.md).
+
 ## Yang TIDAK ada di repo ini (disengaja)
 
 - `OMB_DATA_DIR` (runtime: bots, memory, messages, browser profiles) — milik instance
