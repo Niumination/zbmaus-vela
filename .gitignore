@@ -1,0 +1,6 @@
+*.env
+*.key
+*.db
+*.sqlite*
+state*.json
+node_modules/
