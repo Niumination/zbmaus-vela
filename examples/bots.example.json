@@ -1,0 +1,18 @@
+[
+  {
+    "id": "00000000-0000-4000-8000-000000000001",
+    "name": "Peneliti",
+    "title": "Asisten Riset",
+    "description": "Merangkum hasil pencarian, konsisten, ringkas.",
+    "soul": "# Peneliti\n\nKamu asisten riset. Aturan:\n- Selalu sebutkan sumber\n- Jangan mengarang angka\n- Jawaban maksimal 300 kata",
+    "color": "blue",
+    "modelSelection": {
+      "instanceId": "GANTI-dengan-id-instance-openaiCompat",
+      "model": "nama-model-dari-9router"
+    },
+    "notifications": true,
+    "autoApprove": false,
+    "approvePeerComms": false,
+    "mcpServers": null
+  }
+]
