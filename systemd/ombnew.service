@@ -1,0 +1,20 @@
+[Unit]
+Description=OpenMausBot (OMB) - zb-vela ecosystem
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=$HOME/zb/omb-new
+Environment=PATH=$HOME/.local/node-v24.11.1-linux-x64/bin:/usr/local/bin:/usr/bin:/bin
+Environment=HOME=$HOME
+Environment=OMB_DUCKDB_DIR=$HOME/.local/node-v24.11.1-linux-x64/lib
+ExecStart=/bin/bash $HOME/zb/omb-new/start.sh
+Restart=on-failure
+RestartSec=5
+MemoryMax=1G
+MemoryHigh=800M
+StandardOutput=append:/tmp/omb-serve.log
+StandardError=append:/tmp/omb-serve.log
+
+[Install]
+WantedBy=default.target
