@@ -74,3 +74,13 @@ Prompt hand-off lengkap untuk Hermes Agent di server tujuan (instalasi OMB + 9Ro
 - Database SQLite/DuckDB
 
 Backup runtime disarankan via snapshot berkala folder data (contoh kebijakan backup VPS ada di `docs/BACKUP.md`).
+
+
+## Status Sinkronisasi Ekosistem
+
+Repo ini adalah **blueprint instalasi statis** dan sengaja tidak menyimpan state runtime (bot, routine, memory). State dinamis dikelola di:
+
+- **`zbmaus-vela-eco`** (publik) — snapshot arsitektur, roster bot + model, routine/trigger, memory tim & personal, katalog apps/skills; bebas kredensial.
+- **`zbmaus-vela-secrets`** (privat) — backup state runtime & kredensial VPS.
+
+Sinkronisasi dilakukan harian pukul 23:00 WIB oleh routine "Sinkronisasi & Pembaruan Harian zbmaus-vela-eco". Terakhir diverifikasi: **2026-11-18** (model bot diselaraskan ke agnes-2.5-flash, ZB ke gemini-3.8-flash/Antigravity; routine sinkronisasi & webhook humanoid ditambahkan ke snapshot).
